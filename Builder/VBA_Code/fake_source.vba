@@ -1,12 +1,9 @@
-Sub ShowInfo()
+Sub AutoOpen()
     Dim message As String
     Dim title As String
     
-    message = "Bài tập về nhà" & vbCrLf
-    message = message & "Bài tập số 1" & vbCrLf
-    message = message & "Bài tập số 2" & vbCrLf
-    message = message & "Bài tập số 3" & vbCrLf
-    title = "Thông tin tài liệu"
-
-    MsgBox message, vbInformation, title
+    message = "Trung tam Toeic ABX" & vbCrLf
+    message = message & "Duong so 5, Phuong nt230, Quan UIT" & vbCrLf
+    title = "Thong tin"
+    MsgBox message,, title
 End Sub
