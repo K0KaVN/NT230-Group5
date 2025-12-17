@@ -52,6 +52,7 @@ nt230-marco-malware/
 *   [VBA Stomping - The Art of Deception](https://vbastomp.com/)
 *   [PCodedmp](https://github.com/bontchev/pcodedmp)
 *   [oletools](https://github.com/decalage2/oletools)
+*   [Office VBA File Format Structure](https://learn.microsoft.com/en-us/openspecs/office_file_formats/ms-ovba/575462ba-bf67-4190-9fac-c275523c75fc)
 
 ## Authors
 *   GROUP05:
